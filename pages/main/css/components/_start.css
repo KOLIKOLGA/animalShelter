@@ -1,0 +1,78 @@
+.start {
+   width: 100%;
+   height: 908px;
+   background: radial-gradient(at left ,#513D2F, #1A1A1C);
+   background-image: url(../../../../assets/images/1start-screen-gradient-background.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+.start__content {
+  height: 728px;
+  padding-top: 180px;
+  display: flex;
+  
+}
+.content {
+   width: 40%;
+   height: 322px;
+   color: #ffffff;
+   padding-top: 163px;
+}
+.start__image {
+   width: 698px;
+   height: 728px;
+   background-image: url(../../../../assets/images/start-screen-puppy1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 0 bottom 0;
+}
+.start__title {
+   width: 310px;
+   height: 114px;
+   font-size: 44px;
+   font-weight: 400;
+   line-height: 1.4;
+   margin-bottom: 42px;
+}
+.starts__subtitle {
+   font-size: 14px;
+   line-height: 1.6;
+   font-family: 'Arial';
+   font-weight: 400;
+   width: 460px;
+   height: 72px;
+   margin-bottom: 42px;
+}
+.start__button {
+   background-color: #F1CDB3;
+   color: #292929;
+   display: inline-block;
+}
+
+@media (max-width: 1280px) {
+   .start {
+      height: auto;
+   }
+   .start__content {
+      width: 569px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 150px;
+      padding-top: 150px;
+   }
+   .start__image {
+      width: 569px;
+      height: 593px;
+      background-size: cover;
+   }
+   .content {
+      padding-top: 60px;
+      width: 100%;
+   }
+   .start__button {
+      margin-left: 127px;
+   }
+}
