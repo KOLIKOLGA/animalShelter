@@ -1,5 +1,5 @@
 .site-container {
-	overflow: hidden;
+	overflow: visible;
 }
 .flex {
 	display: flex;
@@ -37,7 +37,15 @@
    text-align: center;
    
 }
-
+.sticky-container {
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: flex-start;
+   overflow: visible;
+  
+}
 @media (max-width: 1280px) {
    .container {
       width: 770px;

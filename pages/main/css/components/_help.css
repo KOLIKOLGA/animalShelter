@@ -54,3 +54,26 @@
       margin: 0;
    }
 }
+
+@media (max-width: 880px) {
+   .help-content__title {
+      font-size: 25px;
+   }
+   .help-list {
+      width: 320px;
+      gap: 30px;
+      justify-content: flex-start;
+      padding-left: 5px;
+   }
+   .help-list__item {
+      width: 130px;
+      height: 87px;
+   }
+   .list-item__image {
+      width: 50px;
+      height: 50px;
+   }
+   .list-item__title {
+      font-size: 15px;
+   }
+}

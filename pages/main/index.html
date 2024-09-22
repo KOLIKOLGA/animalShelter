@@ -12,27 +12,53 @@
    <div class="site-container">
    <header class="header">
       <div class="container header__container">
+         <div class="mobile-menu__container">
          <div class="logo header__logo">
             <a href="#start">
                <h1 class="logo__title">Cozy Hous</h1>
             <p class="logo__subtitle">Shelter for pets in Boston</p>
             </a>
          </div>
+         <input type="checkbox" class="burger-checkbox"/>
+         <button class="header__burger burger btn-reset" aria-label="oupen menu">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+         </button>
+     
          <nav class="header__nav">
+           <div class="mobile-menu__hidden">
+               <!-- <div class="logo header__logo logo-mobile">
+            <a href="#start">
+               <h1 class="logo__title">Cozy Hous</h1>
+            <p class="logo__subtitle">Shelter for pets in Boston</p>
+            </a>
+         </div> -->
+         <!-- <input type="checkbox" class="burger-checkbox-mobile" checked />
+         <button class="header__burger burger btn-reset burger__mobile" aria-label="oupen menu">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+         </button> -->
+      </div>
             <ul class="nav__list">
-               <li class="nav__link"><a href="#start" class="link__text link__active">About the shelter</a></li>
-               <li class="nav__link"><a href="../pets/ourPets.html" class="link__text" target="_blank">Our pets</a></li>
+               <li class="nav__link"><a href="../main/index.html" class="link__text link__active">About the shelter</a></li>
+               <li class="nav__link"><a href="../pets/ourPets.html" class="link__text">Our pets</a></li>
                <li class="nav__link"><a href="#help" class="link__text">Help the shelter</a></li>
-               <li class="nav__link"><a href="#footer" class="link__text">Contacts</a></li>
+               <li class="nav__link"><a href="#contacts" class="link__text">Contacts</a></li>
             </ul>
          </nav>
       </div>
+      </div>
    </header>
    <section class="start" id="start">
+      <div class="start__overlay"></div>
     <div class="container start__content">
        <div class="content">
-          <h2 class="start__title">Not only people need a house</h2>
-          <p class="starts__subtitle">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. 
+        
+          <h2 class="start__title">Not only people
+              need a house</h2>
+          <p class="start__subtitle">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. 
              He or she will love you more than anybody else in the world, you will see!</p>
           <a href="#pets" class="btn-reset start__button btn link">Make a friend</a>
        </div>
@@ -43,7 +69,8 @@
     <div class="container about__container">
       <div class="about__image"></div>
       <div class="about__content">
-      <h3 class="about__title">About the shelter “Cozy House”</h3>
+      <h3 class="about__title">About the shelter
+          “Cozy House”</h3>
       <p class="about__text">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. 
          The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
       <p class="about__text">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. 
@@ -59,7 +86,7 @@
             <button class="btn-reset slider__button link arrowleft">
                <img src="../../assets/icons/ArrowLeft.svg" alt="">
             </button>
-           <ul class="clider__list">
+           <ul class="slider__list">
             <li class="slider-card link">
                <img src="../../assets/images/pets-katrine.png" alt="pets-katrine">
              
@@ -152,7 +179,7 @@
    </section>
    <footer class="footer" id="footer">
       <div class="footer__container container">
-         <div class="contacts">
+         <div class="contacts" id="contacts">
             <h3 class="footer-contacts__title">For questions
                 and suggestions</h3>
                 <a href=" mailto:mail@example.com" class="contacts-email__email"><img src="../../assets/icons/icon-email.svg" alt="tel" class="contacts-email__image"><h4>email@shelter.com</h4></a>

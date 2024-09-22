@@ -38,6 +38,11 @@ a {
    cursor: url('../../../assets/icons/iconCursor.svg'), auto;
 }
 
+input {
+   cursor: url('../../../assets/icons/iconCursor.svg'), auto;
+   
+}
+
 img {
 	max-width: 100%;
 }

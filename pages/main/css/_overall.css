@@ -37,9 +37,22 @@
    text-align: center;
    
 }
+/* .hidden {
+
+} */
 
 @media (max-width: 1280px) {
    .container {
       width: 708px;
+   }
+}
+
+@media (max-width: 880px) {
+   .container {
+      width: 320px;
+      height: 745px;
+   }
+   .help-list {
+      height: auto;
    }
 }

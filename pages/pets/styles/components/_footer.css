@@ -67,3 +67,14 @@
 .contacts-location__location:last-child {
    margin-bottom: 0;
 }
+
+@media (max-width: 1279px) {
+   .footer__container {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .footer__image {
+      margin: auto;
+      margin-top: 60px;
+   }
+}

@@ -1,12 +1,10 @@
 .header {
-   /* position: absolute;
-	top: 0;
-	left: 0; */
 	width: 100%;
    z-index: 100;
    background-color: #fff;
    padding: 30px 40px;
 }
+
 .header__container {
    height: 60px;
    display: flex;
@@ -19,7 +17,7 @@
    font: Georgia;
    font-weight: 400; 
    font-size: 32px; 
-   line-height: 1.2;
+   line-height: 1.1;
    margin-bottom: 10px;
 }
 .logo__subtitle {
@@ -54,4 +52,14 @@
    /* border-top: 3px solid transparent; */
    
 
+}
+
+@media screen and (max-width: 1279px) {
+   .header {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      padding: 30px 30px;
+   }
+   
 }
