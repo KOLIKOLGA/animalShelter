@@ -19,5 +19,9 @@ export const randomPets = (pets) => {
   };
 
   // console.log(mixArr(pets));
-  return result;
+  let i;
+  for (i = 0; i < 6; i++) {
+    petsArray.push(mixArr(pets));
+  }
+  // console.log(petsArray);
 };

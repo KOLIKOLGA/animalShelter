@@ -1,56 +1,27 @@
 export const renderCards = (pets, container) => {
-  let result = [];
-  let result1 = [];
-  let result2 = [];
-  let result3 = [];
-  let result4 = [];
-  let result5 = [];
-
   let petsArray = [];
+  let result = [];
 
-  result = pets
-    .map((i) => [Math.random(), i])
-    .sort()
-    .map((i) => i[1]);
+  const mixArr = (arr) => {
+    return arr
+      .map((i) => [Math.random(), i])
+      .sort()
+      .map((i) => i[1]);
+  };
+
+  let i;
+  for (i = 0; i < 6; i++) {
+    result.push(mixArr(pets));
+  }
+
   console.log(result);
 
-  result1 = pets
-    .map((i) => [Math.random(), i])
-    .sort()
-    .map((i) => i[1]);
-
-  result2 = pets
-    .map((i) => [Math.random(), i])
-    .sort()
-    .map((i) => i[1]);
-
-  result3 = pets
-    .map((i) => [Math.random(), i])
-    .sort()
-    .map((i) => i[1]);
-
-  result4 = pets
-    .map((i) => [Math.random(), i])
-    .sort()
-    .map((i) => i[1]);
-
-  for (let i = 0; i < pets.length; i++) {
-    petsArray.push(pets[i]);
-  }
-  for (let i = 0; i < result.length; i++) {
-    petsArray.push(result[i]);
-  }
-  for (let i = 0; i < result1.length; i++) {
-    petsArray.push(result1[i]);
-  }
-  for (let i = 0; i < result2.length; i++) {
-    petsArray.push(result2[i]);
-  }
-  for (let i = 0; i < result3.length; i++) {
-    petsArray.push(result3[i]);
-  }
-  for (let i = 0; i < result4.length; i++) {
-    petsArray.push(result4[i]);
+  for (i = 0; i < result.length; i++) {
+    petsArray = pets.concat(result[1]);
+    petsArray = petsArray.concat(result[2]);
+    petsArray = petsArray.concat(result[3]);
+    petsArray = petsArray.concat(result[4]);
+    petsArray = petsArray.concat(result[5]);
   }
 
   console.log(petsArray);
