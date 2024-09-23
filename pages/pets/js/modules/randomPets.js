@@ -1,5 +1,5 @@
 export const randomPets = (pets) => {
-  console.log(pets); //1
+  // console.log(pets); //1
 
   let result = [];
   let randomArrayPet = [];
@@ -18,6 +18,6 @@ export const randomPets = (pets) => {
       .map((i) => i[1]);
   };
 
-  console.log(mixArr(pets));
+  // console.log(mixArr(pets));
   return result;
 };
