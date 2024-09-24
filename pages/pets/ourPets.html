@@ -152,7 +152,7 @@
                 </li> -->
               </ul>
             </div>
-            <ul class="slider-buttons__list">
+            <ul class="slider-buttons__list js-pagination">
               <li>
                 <button class="btn-reset slider-button__item disabled">
                   <img
@@ -163,7 +163,9 @@
                 </button>
               </li>
               <li>
-                <button class="btn-reset slider-button__item disabled">
+                <button
+                  class="btn-reset slider-button__item js-pagination-btn-prev disabled"
+                >
                   <img
                     src="../../assets/icons/arrowLeft2_.svg"
                     alt=""
@@ -173,17 +175,20 @@
               </li>
               <li>
                 <button
-                  class="btn-reset slider-button__item slider-button__item_number"
+                  class="btn-reset pagination-button__item slider-button__item_number"
                 >
-                  <img
+                  1
+                  <!-- <img
                     src="../../assets/icons/1.svg"
                     alt=""
                     class="arrowleft"
-                  />
+                  /> -->
                 </button>
               </li>
               <li>
-                <button class="btn-reset slider-button__item arrowright active">
+                <button
+                  class="btn-reset slider-button__item arrowright active js-pagination-btn-next"
+                >
                   <img
                     src="../../assets/icons/arroeRight1.svg"
                     alt=""

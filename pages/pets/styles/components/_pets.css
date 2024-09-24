@@ -90,7 +90,8 @@
    align-items: center;
    gap: 20px;
 }
-.slider-button__item {
+.slider-button__item,
+.pagination-button__item {
    width: 52px;
    height: 52px;
    border-radius: 100%;
