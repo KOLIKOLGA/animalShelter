@@ -99,6 +99,7 @@
 }
 .disabled {
    border: 2px solid #cdcdcd;
+   opacity: 0.3;
 }
 .active {
    border: 2px solid #F1CDB3;
@@ -106,11 +107,16 @@
 .arrowleft {
    background-repeat: no-repeat;
    background-size: cover;
+   rotate: 180deg;
 }
 .arrowright {
    width: 52px;
    height: 52px;
 
+}
+.arrow--right{
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 .slider-button__item_number {
    background-color: #F1CDB3;
