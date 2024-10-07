@@ -22,17 +22,21 @@
 
 }
 .slider {
+   width: 980px;
    display: flex;
    align-items: center;
    justify-content: space-between;
    padding-bottom: 60px;
    position: relative;
+   overflow: hidden;
 }
 .slider__list {
    display: flex;
    align-items: center;
    justify-content: space-between;
+   gap: 90px;
    position: relative;
+   left: -1080px;
 }
 .slider-card {
    display: flex;
@@ -42,8 +46,6 @@
    height: 435px;
    justify-content: space-between;
    background-color: #fafafa;
-   margin-right: 45px;
-   margin-left: 45px;
    border-radius: 9px;
    transition: all 2s ease;
    box-shadow: 1px 1px 3px #999999;
@@ -57,6 +59,12 @@
 }
 .slider-card:hover {
    box-shadow: 0 14px 28px rgba(0,0,0,0.06), 0 10px 10px rgba(0,0,0,0.03);;
+}
+.button-line {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 30px;
 }
 .button-section {
    width: 100%;
@@ -74,6 +82,12 @@
    color: #292929;
    display: inline-block;
    border: 2px solid #F1CDB3;
+   display: flex;
+   width: 70%;
+   height: 52px;
+   justify-content: flex-end;
+   align-items: center;
+
 }
 .slider__button-bgc{
    background-color: #F1CDB3;
@@ -100,7 +114,22 @@
    height: 52px;
    border-radius: 100%;
 }
-
+@keyframes move-right{
+   from{left: -1080px}
+   to{left: -2160px}
+ }
+ .transition-right{
+   animation-name: move-right;
+   animation-duration: 5s;
+ }
+ @keyframes move-left{
+   from{left: -980px}
+   to{left: 0px}
+ }
+ .transition-left{
+   animation-name: move-left;
+   animation-duration: 5s;
+ }
 @media (max-width: 1280px) {
    .slider-card:nth-child(3n) {
       display: none;
