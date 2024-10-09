@@ -22,7 +22,7 @@
 
 }
 .slider {
-   width: 980px;
+   width: 1000px;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -123,7 +123,7 @@
    animation-duration: 5s;
  }
  @keyframes move-left{
-   from{left: -980px}
+   from{left: -1080px}
    to{left: 0px}
  }
  .transition-left{

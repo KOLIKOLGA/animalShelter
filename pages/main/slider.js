@@ -13,7 +13,7 @@ export const slider = (pets) => {
       .map((i) => i[1]);
   };
   let arrayPets = mixArr(pets);
-  arrayPets.push(arrayPets[0]);
+  // arrayPets.push(arrayPets[0]);
   console.log(arrayPets);
 
   const renderSlider = () => {
@@ -38,13 +38,6 @@ export const slider = (pets) => {
       sliderBlock.append(li);
     });
   };
-
-  prevBtn.addEventListener("click", () => {
-    console.log("prev");
-  });
-  nextBtn.addEventListener("click", () => {
-    console.log("next");
-  });
 
   const moveRight = () => {
     sliderBlock.classList.add("transition-right");
